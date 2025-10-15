@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: my-deployment-lb
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: my-app-lb
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-container
-        image: nginx:latest
+        image: 370445361629.dkr.ecr.us-east-1.amazonaws.com/python:latest
         ports:
         - containerPort: 80
 ---
